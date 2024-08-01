@@ -5,7 +5,7 @@ const RefreshRuntime = require('react-refresh/runtime');
 
 if (process.env.NODE_ENV !== 'production') {
   if (typeof safeThis !== 'undefined') {
-    var $RefreshInjected$ = '__reactRefreshInjected';
+    var $RefreshInjected$ = '__reactRefreshInjected' + process.env.APP_NAME + '_';
     // Namespace the injected flag (if necessary) for monorepo compatibility
     if (typeof __react_refresh_library__ !== 'undefined' && __react_refresh_library__) {
       $RefreshInjected$ += '_' + __react_refresh_library__;
